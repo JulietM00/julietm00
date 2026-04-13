@@ -19,7 +19,7 @@ Here are a few featured projects I've built from the ground up:
 
 | Project | Description | Key Tools |
 | :--- | :--- | :--- |
-| [🔗 Retail Sales Analysis](link_to_repo) | Analyzed 12 months of sales data to identify top-performing products and seasonal trends. | SQL, Python (Pandas, Matplotlib) |
+| [🔗 Sales_SQL-Analysis](link_to_repo) | Analyze retail sales data to uncover key business insights such as revenue trends, top-performing products, and customer behavior. | SQL, PostgreSQL |
 | [🔗 Customer Churn Prediction](link_to_repo) | Built a model to identify customers at high risk of churn and proposed retention strategies. | Python (Scikit-learn, Seaborn) |
 | [🔗 Airbnb Market Analysis](link_to_repo) | Explored pricing dynamics and availability in a major city to provide host recommendations. | SQL (Window Functions), PostgreSQL |
 
