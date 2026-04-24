@@ -1,4 +1,4 @@
---Create a customer table.
+-- Create a customer table.
 CREATE TABLE customers (
 	customer_ID INT PRIMARY KEY,
     first_name VARCHAR(100),
@@ -7,7 +7,7 @@ CREATE TABLE customers (
     city VARCHAR(50)
 );
 
---Create a products table.
+-- Create a products table.
 CREATE TABLE products (
 	product_ID INT PRIMARY KEY,
     product_name VARCHAR(100),
@@ -16,7 +16,7 @@ CREATE TABLE products (
     price DECIMAL(10,2)
 );
 
--Create a orders table linking it to the customers table using foreign key.
+-- Create a orders table linking it to the customers table using foreign key.
 CREATE TABLE orders (
     order_ID INT PRIMARY KEY,
     customer_ID INT,
@@ -24,7 +24,7 @@ CREATE TABLE orders (
     FOREIGN KEY (customer_ID) REFERENCES customers(customer_ID)
 );
 
---Create a order items table linking it to orders and products using foriegn keys.
+-- Create a order items table linking it to orders and products using foriegn keys.
 CREATE TABLE order_items (
     order_item_ID INT PRIMARY KEY,
     order_ID INT,
