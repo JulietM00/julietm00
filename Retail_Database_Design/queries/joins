@@ -1,1 +1,94 @@
+--====================================================
+-- Data I created myself if you want data to use.
+--====================================================
 
+-- For customers table
+INSERT INTO customers VALUES (1, 'Annie ', 'Williams', 'annie@williams.info', 'Johannesburg');
+INSERT INTO customers VALUES (2, 'Sheryl', 'Baxter', 'zunigavanessa@smith.info', 'Pretoria');
+INSERT INTO customers VALUES (3, 'Preston', 'Lozano',  'vmata@colon.com', 'Witbank');
+INSERT INTO customers VALUES (4, 'Roy', 'Berry', 'beckycarr@hogan', 'Stellenbosch');
+INSERT INTO customers VALUES (5, 'Joanna', 'Bender', 'colinalvarado@miles.net', 'East London');
+INSERT INTO customers VALUES (6, 'Aimee', 'Downs', 'aimee@gilbert.com,', 'Johannesburg');
+INSERT INTO customers VALUES (7, 'Darren', 'Peck', 'tgates@cantrell.com,', 'Johannesburg');
+INSERT INTO customers VALUES (8, 'Simphiwe', 'Zulu', 'zulu@gmail.com', 'Witbank');
+INSERT INTO customers VALUES (9, 'Sheryl', 'Meyers', 'mariokhan@ryan-pope.org', 'Pretoria');
+INSERT INTO customers VALUES (10, 'Michelle', 'Mthembu', 'mdyer@escobar.net', 'East London');
+INSERT INTO customers VALUES (11, 'Carl', 'Schroeder', 'kirksalas@webb.com', 'Benoni');
+INSERT INTO customers VALUES (12, 'Jenna', 'Dodson', 'mark42@robbins.com', 'Boksburg');
+INSERT INTO customers VALUES (13, 'Tracey', 'Mata', 'alex56@walls.org', 'Midrand');
+INSERT INTO customers VALUES (14, 'Kristine', 'Cox', 'holdenmiranda@clarke.com', 'Durban');
+INSERT INTO customers VALUES (15, 'Faith','Lutz', 'cassieparrish@blevins-chapman.net', 'Cape Town');
+INSERT INTO customers VALUES (16, 'Miranda', 'Beasley', 'vduncan@parks-hardy.com', 'Polokwane');
+INSERT INTO customers VALUES (17, 'Caroline', 'Foley', 'holtgwendolyn@watson-davenport.com', 'Benoni');
+INSERT INTO customers VALUES (18, 'Greg', 'Mata', 'jaredjuarez@carroll.org', 'Delmas');
+INSERT INTO customers VALUES (19, 'Clifford', 'Jacobson', 'joseph26@jacobson.com', 'Witbank');
+INSERT INTO customers VALUES (20, 'Joanna', 'Kirk', 'tuckerangie@salazar.net', 'Pretoria');
+
+-- For products table
+INSERT INTO products(product_ID, product_name, brand, category, price) VALUES
+(1, 'Compact Printer Air Advanced Digital', 'Dell', 'Electronics', 3590.99),
+(2, 'iPhone 17', 'Apple', 'Smartphone', 799.99),
+(3, 'Foldable Headphones', 'Sony', 'Audio', 299.99),
+(4, 'Tablet','Mobicel', 'Electronics', 899.99),
+(5, 'Advanced Router Rechargeable','Gallagher and Sons', 'Kitchen Appliance', 2599.99),
+(6, 'Portable Mouse Monitor Phone','Irwin LLC', 'Electronics', 199.99),
+(7, 'Ultra Projector Oven Thermostat Prime Advanced','Mccoy','Electronics', 1999.99),
+(8, 'Webcam','HP', 'Electronics', 499.99),
+(9, 'Cooler Fan','Bray LLC', 'Electronics', 1999.99),
+(10, 'Portable Speaker','JBL', 'Audio', 999.99),
+(11, 'iPod','Apple', 'Electronics', 999.99),
+(12, 'BLP16.100WH Blender & Smoothie Maker','Kenwood ', 'Kitchen Appliance', 699.99),
+(13, 'Silver Digital Microwave – EM145A2HG ','Midea', 'Kitchen Appliance', 2500.00),
+(14, 'KTF518 Fridge White 170L','KIC', 'Kitchen Appliance', 5000.00),
+(15, '2000W Contact Griller','Bosch', 'Kitchen Appliance', 5100.00),
+(16, 'Serie 4 90cm Side-by-Side Fridge/Freezer – KAN93VL30N','Bosch ', 'Kitchen Appliance', 20299.00),
+(17, 'Stainless Steel Deluxe Kettle & 2 Slice Toaster Breakfast Pack ','Midea', 'Kitchen Appliance', 999.99),
+(18, 'GO 3 Portable Speaker ','JBL', 'Audio', 999.99),
+(19, 'S26 Ultra 512GB','Samsung', 'Smartphone', 35999.00),
+(20, 'iPhone 13 Pro Max','Apple', 'Smartphone', 12999.99);
+
+-- For orders table
+INSERT INTO orders VALUES 
+(1, 2, '2025-01-01'),
+(3, 5, '2025-01-02'),
+(6, 8, '2025-01-15'),
+(5, 4, '2025-02-08'),
+(10, 12, '2025-02-20'),
+(7, 16, '2025-02-28'),
+(9, 1, '2025-03-04'),
+(15, 20, '2025-03-12'),
+(8, 18, '2025-03-25'),
+(20, 11, '2025-04-16'),
+(16, 17, '2025-05-30'),
+(4, 6, '2025-05-22'),
+(17, 19, '2025-06-27'),
+(18, 10, '2025-07-31'),
+(2, 3, '2025-08-26'),
+(12, 9, '2025-09-24'),
+(11, 13, '2025-10-13'),
+(13, 15, '2025-10-26'),
+(19, 14, '2025-11-27'),
+(14, 7, '2025-12-08'); 
+
+-- Order Items
+INSERT INTO order_items VALUES 
+(1, 1, 2, 1),  
+(2, 2, 3, 2),
+(3, 3, 5, 3),  
+(4, 4, 6, 5),
+(5, 5, 4, 1),  
+(6, 6, 8, 2),
+(7, 7, 16, 2),  
+(8, 8, 18, 1),
+(9, 9, 1, 2), 
+(10, 10, 12, 1),
+(11, 11, 13, 2),  
+(12, 12, 9, 1),
+(13, 13, 15, 2),  
+(14, 14, 7, 1),
+(15, 15, 20, 2),  
+(16, 16, 17, 3),
+(17, 17, 19, 2),  
+(18 ,18, 20, 1),
+(19, 19, 14, 2),
+(20, 20, 11, 1);  
